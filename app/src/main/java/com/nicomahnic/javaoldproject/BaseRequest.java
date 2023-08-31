@@ -19,7 +19,7 @@ public class BaseRequest<O> {
     public O execute() {
         HttpURLConnection urlConnection = null;
         try {
-            URL url = new URL("http://192.168.1.14:3000/data/");
+            URL url = new URL("https://raw.githubusercontent.com/nmahnic/android_old_java_basic_project/main/dataJson/data.json");
             urlConnection = (HttpURLConnection) url.openConnection();
             int code = urlConnection.getResponseCode();
             Log.e("NM", String.valueOf(code));
