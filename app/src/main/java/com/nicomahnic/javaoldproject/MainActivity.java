@@ -15,13 +15,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.textView = findViewById(R.id.text_view);
-
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            System.err.format("InterruptedException : %s%n", e);
-        }
-
         new LoadConcreteDataTask(this).execute();
     }
 

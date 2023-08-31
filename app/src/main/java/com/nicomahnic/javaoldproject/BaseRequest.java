@@ -29,6 +29,7 @@ public class BaseRequest<O> {
             while ((line = rd.readLine()) != null) {
                 sb.append(line);
             }
+            Log.e("NM", String.valueOf(sb));
             return mapper.convert(new JSONObject(sb.toString()));
         } catch (Exception e) {
             Log.e("NM", e.getMessage());
