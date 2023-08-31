@@ -1,3 +1,4 @@
 {
-	"data": { "field1":"Hola", "field2":"Chau" }
+	"field1":"Hola",
+	"field2":"Chau"
 }
